@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h1>Yamaan Faraz's YF official App</h1>
+    <form method="post">
+        {% csrf_token %}
+            <h6>Email</h6>
+            <input id="input-1" class="w-100" name="input1" placeholder="Enter Your Email Here...">
+            <h6>Password</h6>
+            <input id="input-2" class="w-100" name="input2" placeholder="Enter Your Password Here...">
+            <button type="submit" class="btn btn-secondary">Submit</button>
+            <h5><span class="badge bg-success"></span></h5>
+    </form>
+</div>
+{% endblock %}
